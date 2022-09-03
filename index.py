@@ -1,5 +1,5 @@
-def iniciando_juego():
-    print("beging")
+from app import App
 
+#Just run the app
 if __name__ == "__main__":
-    iniciando_juego()
+    app = App()
