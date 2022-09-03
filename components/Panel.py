@@ -3,6 +3,7 @@ import tkinter as tkr
 class Panel(tkr.LabelFrame):
     #This class is for creating an object that serves as a component for the application.
     #The control panel
+
     """
         It is the control panel.
 
@@ -11,14 +12,17 @@ class Panel(tkr.LabelFrame):
     """
 
     def __init__(self, container, confirm_command, reset_command):
+
         """
             Initialize the object.
 
-            self: It is to access any attribute or method of the class.
-            container: Receives a widget object that is the container for everything.
-            confirm_command: Function to confirm the entered word.
-            reset_command: Function to restart the game
+            Parameters:
+                self: It is to access any attribute or method of the class.
+                container: Receives a widget object that is the container for everything.
+                confirm_command: Function to confirm the entered word.
+                reset_command: Function to restart the game
         """
+
         #Overload the parent constructor.
         super().__init__(
             container,
@@ -69,19 +73,35 @@ class Panel(tkr.LabelFrame):
 
     
     def getLetter(self):
+
         """
             Returns the value of the string entered.
 
-            self: It is to access any attribute or method of the class.
+            Parameters:
+                self: It is to access any attribute or method of the class.
         """
+
         return self.__input_letter.get()
+
+    def reboot(self):
+
+        """
+            Resets the text field to an empty string.
+
+            Parameters:
+                self: It is to access any attribute or method of the class.
+        """
+
+        self.__input_letter.delete(0,tkr.END)
 
 
     def enabled(self):
+
         """
             Change the board state to enabled.
 
-            self: It is to access any attribute or method of the class.
+            Parameters:
+                self: It is to access any attribute or method of the class.
         """
 
         self.__confirm_button.config(
@@ -98,10 +118,12 @@ class Panel(tkr.LabelFrame):
 
 
     def disabled(self):
+        
         """
             Change the board state to disabled.
             
-            self: It is to access any attribute or method of the class.
+            Parameters:
+                self: It is to access any attribute or method of the class.
         """
 
         self.__confirm_button.config(
