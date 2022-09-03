@@ -26,7 +26,7 @@ class Panel(tkr.LabelFrame):
         #Overload the parent constructor.
         super().__init__(
             container,
-            text = "Panel",
+            text = "Into a letter",
             background = "black",
             fg = "#a8ffa8",
             width = 20,
@@ -135,5 +135,3 @@ class Panel(tkr.LabelFrame):
             state = "disabled",
             bg = "grey"
         )
-
-    

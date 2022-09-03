@@ -123,6 +123,7 @@ class App:
 
       self.__view.setMessage("")
       self.__resp.enabled()
+      self.__resp.reboot()
 
     def validation(self):
 
@@ -189,9 +190,3 @@ class App:
       self.validation()
       self.verification()
       self.__view.updateScreen(self.__spaces, self.__states[self.__attemps])
-      
-
-      
-
-    
-

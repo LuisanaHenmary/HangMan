@@ -87,5 +87,3 @@ class Screen:
         """
         
         self.__message.config(text=message, fg=color)
-
-    
